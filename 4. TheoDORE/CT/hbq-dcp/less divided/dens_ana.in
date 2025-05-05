@@ -1,0 +1,14 @@
+rtype='orca'
+rfile='HBQ-DCP-ESD.out'
+read_binary=True
+mo_file='HBQ-DCP-ESD.molden.input'
+at_lists=[[1, 2, 3, 7, 5, 4, 8, 9, 11, 10, 15, 14, 13, 12, 6, 28, 29, 27, 30, 31, 34, 33, 32], [16, 17, 18, 19, 24, 25, 26, 20, 21, 22, 23], [35, 36, 37, 39, 42, 43, 41, 45, 44, 46, 38, 40, 48, 49, 47, 51, 52, 50]]
+Om_formula=2
+eh_pop=1
+comp_ntos=False
+comp_dntos=False
+comp_ntos=False
+comp_rho0n=False
+prop_list=['Om', 'POSi', 'POSf', 'PR', 'CT', 'MC', 'LC', 'MLCT', 'LMCT', 'LLCT', 'RMSeh']
+
+

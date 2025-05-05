@@ -1,0 +1,138 @@
+\documentclass{standalone}
+\usepackage{xcolor}
+\usepackage{tikz, pgfplots}
+\usetikzlibrary{plotmarks, arrows}
+\usetikzlibrary{calc, decorations, plotmarks, fit, positioning, shapes.geometric}
+\pgfplotsset{compat=1.4}
+
+% ===========================================================================
+% colour definitions
+
+\definecolor{BL}{HTML}{0099e6}
+\definecolor{B}{HTML}{006699}
+\definecolor{BD}{HTML}{004466}
+\definecolor{BR}{HTML}{0080FF}  % like RoyalBlue
+
+\definecolor{RL}{HTML}{d65454}
+\definecolor{R}{HTML}{893636}
+\definecolor{RD}{HTML}{ad1737}  % like Maroon
+
+\definecolor{GL}{HTML}{10d05d}
+\definecolor{G}{HTML}{009933}
+\definecolor{GD}{HTML}{004d1a}
+
+\definecolor{Y}{HTML}{D0D030}
+\definecolor{O}{HTML}{FFA500}
+\definecolor{T}{HTML}{4DC0FF}
+\definecolor{OL}{HTML}{FFAA80}
+\definecolor{P}{HTML}{DD88BB}
+\definecolor{V}{HTML}{703676}
+
+% ===========================================================================
+
+% settings for the coordinate system
+\pgfplotsset{
+every linear axis/.append style={
+width=7.000 cm, height=3.0cm,xmin=0, xmax=6,
+scale only axis, axis on top,
+  yticklabel style={
+    /pgf/number format/fixed,
+    /pgf/number format/zerofill,
+    /pgf/number format/precision=1},
+  legend style={at={(1.01,0.00)}, anchor=south west, draw=none, fill=black!5, inner sep=0.5pt, outer sep=0.5pt},
+  legend columns=1, legend cell align=left},
+}
+\pgfplotsset{colormap={CI}{color=(white); color=(blue!50); color=(O!70);}}
+
+% ===========================================================================
+
+\tikzstyle{orb} = [ellipse, draw, color=black, fill=black!5, inner sep=-1pt, align=center]
+\tikzstyle{arrow} = [-open triangle 45, black, thick]
+\newcommand{\incMO}[1]{\includegraphics[width=4.5cm, trim=1cm 1cm 1cm 1cm, clip=true]{#1}}
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+      anchor=south west, at={(0,0)},
+      height=3.0cm,
+      xlabel={}, ylabel={Energy (eV)},
+      xtick={-10}, xticklabels={},
+      %colorbar % uncomment for colorbar as legend
+      ]
+\addplot[mark=-, only marks, mark options={scale=2, line width=2pt}]  table[x index=0, y index=2] {Om_bar_data.txt};
+
+% Uncomment to plot oscillator strengths as shading
+%\addplot+[solid, mesh, point meta=explicit, no markers, line width=5cm, shader=flat corner] table[x expr=\thisrowno{0}-0.5, y expr=2, meta expr=\thisrowno{3}] {Om_bar_data.txt};
+\end{axis}
+\begin{axis}[
+      anchor=north west, at={(0,0)},
+      xlabel={State}, ylabel={Character},
+      ytick={0.0,0.2,...,0.8},
+      xtick pos=left, xtick align=outside,
+xtick={1, 2, 5},
+xticklabels={$1(1)A$, $2(1)A$, $5(1)A$},
+ymin=-0.0, ymax=1,
+ybar stacked, bar width=0.933 cm]
+\addplot[ybar, draw=black, fill=pink] table[x index=0, y index=4] {Om_bar_data.txt};
+\addlegendentry{CTAB};
+\addplot[ybar, draw=black, fill=blue] table[x index=0, y index=5] {Om_bar_data.txt};
+\addlegendentry{CTAC};
+\addplot[ybar, draw=black, fill=green!50!black] table[x index=0, y index=6] {Om_bar_data.txt};
+\addlegendentry{CTAD};
+\addplot[ybar, draw=black, fill=cyan] table[x index=0, y index=7] {Om_bar_data.txt};
+\addlegendentry{CTBA};
+\addplot[ybar, draw=black, fill=red] table[x index=0, y index=8] {Om_bar_data.txt};
+\addlegendentry{CTBC};
+\addplot[ybar, draw=black, fill=orange] table[x index=0, y index=9] {Om_bar_data.txt};
+\addlegendentry{CTBD};
+\addplot[ybar, draw=black, fill=gray] table[x index=0, y index=10] {Om_bar_data.txt};
+\addlegendentry{CTCA};
+\addplot[ybar, draw=black, fill=yellow] table[x index=0, y index=11] {Om_bar_data.txt};
+\addlegendentry{CTCB};
+\addplot[ybar, draw=black, fill=purple] table[x index=0, y index=12] {Om_bar_data.txt};
+\addlegendentry{CTCD};
+\addplot[ybar, draw=black, fill=brown] table[x index=0, y index=13] {Om_bar_data.txt};
+\addlegendentry{CTDA};
+\addplot[ybar, draw=black, fill=magenta] table[x index=0, y index=14] {Om_bar_data.txt};
+\addlegendentry{CTDB};
+\addplot[ybar, draw=black, fill=teal] table[x index=0, y index=15] {Om_bar_data.txt};
+\addlegendentry{CTDC};
+\addplot[ybar, draw=black, fill=olive] table[x index=0, y index=16] {Om_bar_data.txt};
+\addlegendentry{LEA};
+\addplot[ybar, draw=black, fill=pink] table[x index=0, y index=17] {Om_bar_data.txt};
+\addlegendentry{LEB};
+\addplot[ybar, draw=black, fill=violet] table[x index=0, y index=18] {Om_bar_data.txt};
+\addlegendentry{LEC};
+\addplot[ybar, draw=black, fill=lime] table[x index=0, y index=19] {Om_bar_data.txt};
+\addlegendentry{LED};
+
+% Uncomment for double excitations
+% \addplot[ybar, draw=black, fill=yellow!50] table[x index=0, y index=20] {Om_bar_data.txt};
+% \addlegendentry{2-el.};
+% Handles for arrows
+\node at (axis cs: 1,-0.15) (h1) {};
+\node at (axis cs: 2,-0.15) (h2) {};
+\node at (axis cs: 5,-0.15) (h3) {};
+\end{axis}
+
+
+
+% Template for drawing orbital pictures
+%    You can use the \incMO command defined above
+% \node[orb, anchor=north west, at={(-1cm,-4.8cm)}] (S1e) {incMO};
+% \node[orb, below of=S1e, anchor=north, node distance=2cm] (S1h) {incMO};
+% \node[orb, right of=S1e, anchor=west, xshift=0.7cm, yshift=-0.3cm] (S2e) {incMO};
+% \node[orb, below of=S2e, anchor=north, node distance=2cm] (S2h) {incMO};
+% \node[orb, right of=S2e, anchor=west, xshift=0.7cm, yshift=0.3cm] (S3e) {incMO};
+% \node[orb, below of=S3e, anchor=north, node distance=2cm] (S3h) {incMO};
+%
+
+% \draw (S1e) to (S1h);
+% \draw (S2e) to (S2h);
+% \draw (S3e) to (S3h);
+
+% \draw[arrow] (S1e) to [out=90, in=-90] (h1);
+% \draw[arrow] (S2e) to [out=90, in=-90] (h2);
+% \draw[arrow] (S3e) to [out=90, in=-90] (h3);
+\end{tikzpicture}
+\end{document}

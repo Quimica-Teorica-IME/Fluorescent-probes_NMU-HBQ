@@ -1,0 +1,2 @@
+/var/spool/slurm/d/job27640/slurm_script: linha 19: /orca: Arquivo ou diretório inexistente
+mv: não foi possível obter estado de '27640/*': Arquivo ou diretório inexistente

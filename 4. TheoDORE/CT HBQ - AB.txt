@@ -1,0 +1,38 @@
+theodore analyze_tden
+
+
+
+MENOR DIVISÃO:
+
+
+theodore plot_om_bars
+OmFrag.txt
+tden_summ.txt (ou summ.txt)
+7.000000
+
+
+
+CTAB
+blue
+1 2
+
+CTBA
+pink
+2 1
+
+LEA
+green
+2 2
+
+LEB
+orange
+1 1
+
+
+
+
+pdflatex Om_bars.tex
+
+
+
+

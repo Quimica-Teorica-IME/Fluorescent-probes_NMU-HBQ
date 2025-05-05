@@ -1,0 +1,11 @@
+#!/bin/bash
+#PBS -l nodes=2:ppn=4,walltime=720:00:00
+#PBS -N NMU-H_ESD
+#PBS -j oe
+#PBS -M bruno.rodrigues@ime.eb.br
+#PBS -m abe
+module load ORCA/5.0.1-gompi-2021a-static OpenMPI/4.1.1-GCC-8.3.0
+
+cd /home/bruno.rodrigues/NMU-H_ESD/
+
+/apps/software/ORCA/5.0.1-gompi-2021a-static/bin/orca NMU-H_ESD.inp > NMU-H_ESD.out

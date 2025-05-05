@@ -1,0 +1,3 @@
+[file orca_main/maininp2.cpp, line 415]: Error: number expected in COORDS/FirstCoordinate ATOM-NO 0
+
+mv: não foi possível obter estado de '25299/*': Arquivo ou diretório inexistente

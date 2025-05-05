@@ -1,0 +1,6 @@
+[file orca_esd/orca_esd.cpp, line 9605]: Error (ORCA_ESD): Assigned GSHESSIAN file does not exist!
+
+[file orca_tools/qcmsg.cpp, line 394]: 
+  .... aborting the run
+
+mv: não foi possível obter estado de '27985/*': Arquivo ou diretório inexistente

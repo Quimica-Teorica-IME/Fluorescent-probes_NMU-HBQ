@@ -1,0 +1,57 @@
+theodore analyze_tden
+
+
+
+theodore plot_om_bars
+OmFrag.txt
+tden_summ.txt (ou summ.txt)
+7.000000
+
+
+
+
+
+CTAB
+pink
+2 1
+
+CTAC
+blue
+3 1
+
+CTBA
+cyan
+1 2
+
+CTCA
+gray
+1 3
+
+CTBC
+red
+3 2
+
+CTCB
+Y
+2 3
+
+LEA
+green
+1 1
+
+LEB
+orange
+2 2
+
+LEC
+purple
+3 3
+
+
+
+
+
+pdflatex Om_bars.tex
+
+
+

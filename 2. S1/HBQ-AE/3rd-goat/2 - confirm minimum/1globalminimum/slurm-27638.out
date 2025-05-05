@@ -1,0 +1,2 @@
+/var/spool/slurm/d/job27638/slurm_script: linha 23: /home/mmaximo/orca_6_0_1_avx2/orca: Arquivo ou diretório inexistente
+mv: não foi possível obter estado de '27638/*': Arquivo ou diretório inexistente

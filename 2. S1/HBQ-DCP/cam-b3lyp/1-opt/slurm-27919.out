@@ -1,0 +1,18 @@
+[n01:1695985] [[48573,0],0] ORTE_ERROR_LOG: The system limit on number of pipes a process can open was reached in file base/iof_base_setup.c at line 116
+[n01:1695985] [[48573,0],0] ORTE_ERROR_LOG: The system limit on number of pipes a process can open was reached in file base/odls_base_default_fns.c at line 1427
+--------------------------------------------------------------------------
+Sorry!  You were supposed to get help about:
+    orterun:sys-limit-pipe
+But I couldn't open the help file:
+    /opt/ohpc/pub/mpi/openmpi4-gnu12/4.1.6/share/openmpi/help-orterun.txt: Too many open files.  Sorry!
+--------------------------------------------------------------------------
+[n01:1695985] *** Process received signal ***
+[n01:1695985] Signal: Segmentation fault (11)
+[n01:1695985] Signal code: Address not mapped (1)
+[n01:1695985] Failing at address: (nil)
+[n01:1695985] [ 0] /lib64/libpthread.so.0(+0x12cf0)[0x7fb468190cf0]
+[n01:1695985] *** End of error message ***
+[file orca_tools/qcmsg.cpp, line 394]: 
+  .... aborting the run
+
+mv: cannot stat '27919/*': No such file or directory

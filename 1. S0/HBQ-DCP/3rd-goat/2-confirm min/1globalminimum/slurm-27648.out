@@ -1,0 +1,2 @@
+ERROR: Unable to locate a modulefile for 'orca/6.0.1.avx'
+mv: não foi possível obter estado de '27648/*': Arquivo ou diretório inexistente

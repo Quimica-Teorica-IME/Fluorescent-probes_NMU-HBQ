@@ -1,0 +1,276 @@
+load HBQ-DCP-ESD.molden.input FILTER "nosort"
+mo titleformat ""
+rotate x -10
+rotate y -20
+rotate z -20
+translate y 10
+
+background white
+mo fill
+mo cutoff 0.04
+
+mo color blue red
+mo [ -0.993 106]
+write image pngt "NTO1-1-A_1o_0.97.png"
+mo color orange green
+mo [ -1.000 107]
+write image pngt "NTO1-1-A_1v_0.97.png"
+
+mo color blue red
+mo [ 0.993 105]
+write image pngt "NTO2-1-A_1o_0.99.png"
+mo color orange green
+mo [ 0.999 107]
+write image pngt "NTO2-1-A_1v_0.99.png"
+
+mo color blue red
+mo [ 0.983 104]
+write image pngt "NTO3-1-A_1o_0.87.png"
+mo color orange green
+mo [ 0.999 107]
+write image pngt "NTO3-1-A_1v_0.87.png"
+mo color blue red
+mo [ -0.971 106]
+write image pngt "NTO3-1-A_2o_0.13.png"
+mo color orange green
+mo [ -0.990 108]
+write image pngt "NTO3-1-A_2v_0.13.png"
+
+mo color blue red
+mo [ 0.987 106]
+write image pngt "NTO4-1-A_1o_0.85.png"
+mo color orange green
+mo [ 0.994 108]
+write image pngt "NTO4-1-A_1v_0.85.png"
+mo color blue red
+mo [ -0.914 104 0.290 102 -0.204 103]
+write image pngt "NTO4-1-A_2o_0.13.png"
+mo color orange green
+mo [ 0.966 107 0.228 109]
+write image pngt "NTO4-1-A_2v_0.13.png"
+
+mo color blue red
+mo [ -0.997 103]
+write image pngt "NTO5-1-A_1o_0.98.png"
+mo color orange green
+mo [ -0.999 107]
+write image pngt "NTO5-1-A_1v_0.98.png"
+
+mo color blue red
+mo [ 0.953 105 0.297 104]
+write image pngt "NTO6-1-A_1o_0.87.png"
+mo color orange green
+mo [ 0.999 108]
+write image pngt "NTO6-1-A_1v_0.87.png"
+mo color blue red
+mo [ 0.952 102]
+write image pngt "NTO6-1-A_2o_0.09.png"
+mo color orange green
+mo [ 0.998 107]
+write image pngt "NTO6-1-A_2v_0.09.png"
+
+mo color blue red
+mo [ -0.821 104 0.530 105]
+write image pngt "NTO7-1-A_1o_0.65.png"
+mo color orange green
+mo [ -0.996 108]
+write image pngt "NTO7-1-A_1v_0.65.png"
+mo color blue red
+mo [ -0.971 102]
+write image pngt "NTO7-1-A_2o_0.24.png"
+mo color orange green
+mo [ -0.992 107]
+write image pngt "NTO7-1-A_2v_0.24.png"
+mo color blue red
+mo [ -0.953 106 -0.227 104]
+write image pngt "NTO7-1-A_3o_0.10.png"
+mo color orange green
+mo [ -0.935 109 0.328 110]
+write image pngt "NTO7-1-A_3v_0.10.png"
+
+mo color blue red
+mo [ 0.965 102]
+write image pngt "NTO8-1-A_1o_0.65.png"
+mo color orange green
+mo [ 0.990 107]
+write image pngt "NTO8-1-A_1v_0.65.png"
+mo color blue red
+mo [ -0.948 104]
+write image pngt "NTO8-1-A_2o_0.29.png"
+mo color orange green
+mo [ 0.971 108]
+write image pngt "NTO8-1-A_2v_0.29.png"
+
+mo color blue red
+mo [ -0.969 101 0.211 100]
+write image pngt "NTO9-1-A_1o_0.94.png"
+mo color orange green
+mo [ -0.996 107]
+write image pngt "NTO9-1-A_1v_0.94.png"
+
+mo color blue red
+mo [ 0.984 106]
+write image pngt "NTO10-1-A_1o_0.55.png"
+mo color orange green
+mo [ 0.996 109]
+write image pngt "NTO10-1-A_1v_0.55.png"
+mo color blue red
+mo [ -0.910 100 -0.264 99]
+write image pngt "NTO10-1-A_2o_0.26.png"
+mo color orange green
+mo [ 0.970 107 -0.233 108]
+write image pngt "NTO10-1-A_2v_0.26.png"
+mo color blue red
+mo [ 0.745 104 -0.542 102 0.222 103]
+write image pngt "NTO10-1-A_3o_0.18.png"
+mo color orange green
+mo [ -0.956 108 -0.235 107]
+write image pngt "NTO10-1-A_3v_0.18.png"
+
+mo color blue red
+mo [ -0.840 100 0.433 99 0.238 98 -0.210 101]
+write image pngt "NTO11-1-A_1o_0.87.png"
+mo color orange green
+mo [ -0.999 107]
+write image pngt "NTO11-1-A_1v_0.87.png"
+mo color blue red
+mo [ -0.992 106]
+write image pngt "NTO11-1-A_2o_0.08.png"
+mo color orange green
+mo [ -0.990 109]
+write image pngt "NTO11-1-A_2v_0.08.png"
+
+mo color blue red
+mo [ -0.995 103]
+write image pngt "NTO12-1-A_1o_0.96.png"
+mo color orange green
+mo [ -0.997 108]
+write image pngt "NTO12-1-A_1v_0.96.png"
+
+mo color blue red
+mo [ 0.944 98]
+write image pngt "NTO13-1-A_1o_0.96.png"
+mo color orange green
+mo [ 0.999 107]
+write image pngt "NTO13-1-A_1v_0.96.png"
+
+mo color blue red
+mo [ -0.830 99 -0.446 97]
+write image pngt "NTO14-1-A_1o_0.77.png"
+mo color orange green
+mo [ -0.999 107]
+write image pngt "NTO14-1-A_1v_0.77.png"
+mo color blue red
+mo [ -0.910 102 -0.316 103]
+write image pngt "NTO14-1-A_2o_0.19.png"
+mo color orange green
+mo [ -0.996 108]
+write image pngt "NTO14-1-A_2v_0.19.png"
+
+mo color blue red
+mo [ -0.975 97]
+write image pngt "NTO15-1-A_1o_0.37.png"
+mo color orange green
+mo [ -0.988 107]
+write image pngt "NTO15-1-A_1v_0.37.png"
+mo color blue red
+mo [ 0.970 102]
+write image pngt "NTO15-1-A_2o_0.30.png"
+mo color orange green
+mo [ -0.994 108]
+write image pngt "NTO15-1-A_2v_0.30.png"
+mo color blue red
+mo [ 0.922 105 -0.259 106 0.245 104]
+write image pngt "NTO15-1-A_3o_0.26.png"
+mo color orange green
+mo [ -0.985 109]
+write image pngt "NTO15-1-A_3v_0.26.png"
+mo color blue red
+mo [ 0.951 106 0.224 105]
+write image pngt "NTO15-1-A_4o_0.08.png"
+mo color orange green
+mo [ -0.972 110]
+write image pngt "NTO15-1-A_4v_0.08.png"
+
+mo color blue red
+mo [ 0.982 105]
+write image pngt "NTO16-1-A_1o_0.73.png"
+mo color orange green
+mo [ 0.999 109]
+write image pngt "NTO16-1-A_1v_0.73.png"
+mo color blue red
+mo [ 0.955 97 -0.212 99]
+write image pngt "NTO16-1-A_2o_0.23.png"
+mo color orange green
+mo [ 1.000 107]
+write image pngt "NTO16-1-A_2v_0.23.png"
+
+mo color blue red
+mo [ -0.936 106 -0.324 104]
+write image pngt "NTO17-1-A_1o_0.49.png"
+mo color orange green
+mo [ -0.994 110]
+write image pngt "NTO17-1-A_1v_0.49.png"
+mo color blue red
+mo [ 0.676 97 -0.524 99 -0.257 100 -0.253 96 -0.243 101]
+write image pngt "NTO17-1-A_2o_0.33.png"
+mo color orange green
+mo [ 0.978 107]
+write image pngt "NTO17-1-A_2v_0.33.png"
+mo color blue red
+mo [ -0.824 104 0.405 105 0.264 106]
+write image pngt "NTO17-1-A_3o_0.10.png"
+mo color orange green
+mo [ -0.869 109 -0.477 108]
+write image pngt "NTO17-1-A_3v_0.10.png"
+mo color blue red
+mo [ -0.703 102 0.470 101 0.304 100 0.209 95 -0.201 105]
+write image pngt "NTO17-1-A_4o_0.08.png"
+mo color orange green
+mo [ -0.855 108 0.473 109]
+write image pngt "NTO17-1-A_4v_0.08.png"
+
+mo color blue red
+mo [ -0.946 96]
+write image pngt "NTO18-1-A_1o_0.97.png"
+mo color orange green
+mo [ -0.999 107]
+write image pngt "NTO18-1-A_1v_0.97.png"
+
+mo color blue red
+mo [ 0.849 104 0.420 106 0.242 105]
+write image pngt "NTO19-1-A_1o_0.51.png"
+mo color orange green
+mo [ 0.955 109 -0.216 108]
+write image pngt "NTO19-1-A_1v_0.51.png"
+mo color blue red
+mo [ -0.948 102 0.242 106]
+write image pngt "NTO19-1-A_2o_0.29.png"
+mo color orange green
+mo [ 0.964 108 0.228 109]
+write image pngt "NTO19-1-A_2v_0.29.png"
+mo color blue red
+mo [ 0.642 99 -0.566 97 -0.261 96 0.223 100]
+write image pngt "NTO19-1-A_3o_0.12.png"
+mo color orange green
+mo [ 0.976 107]
+write image pngt "NTO19-1-A_3v_0.12.png"
+mo color blue red
+mo [ 0.863 106 -0.377 104 -0.258 105]
+write image pngt "NTO19-1-A_4o_0.06.png"
+mo color orange green
+mo [ 0.956 110]
+write image pngt "NTO19-1-A_4v_0.06.png"
+
+mo color blue red
+mo [ -0.957 101]
+write image pngt "NTO20-1-A_1o_0.82.png"
+mo color orange green
+mo [ -0.990 108]
+write image pngt "NTO20-1-A_1v_0.82.png"
+mo color blue red
+mo [ 0.763 104 -0.479 106 0.405 105]
+write image pngt "NTO20-1-A_2o_0.10.png"
+mo color orange green
+mo [ 0.842 110 0.518 109]
+write image pngt "NTO20-1-A_2v_0.10.png"

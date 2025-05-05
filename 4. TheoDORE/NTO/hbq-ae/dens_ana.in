@@ -1,0 +1,13 @@
+rtype='orca'
+rfile='HBQ_ESD.out'
+read_binary=True
+mo_file='HBQ_ESD.molden.input'
+comp_ntos=True
+comp_dntos=False
+jmol_orbitals=True
+molden_orbitals=True
+alphabeta=False
+cube_orbitals=False
+comp_p_h_dens=False
+comp_rho0n=False
+prop_list=['PRNTO', 'Z_HE']

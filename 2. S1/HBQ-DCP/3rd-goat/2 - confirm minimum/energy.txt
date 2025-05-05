@@ -1,0 +1,5 @@
+Structure 1 - -1603.726769116217
+Structure 2 - -1641.238244372436 	!!!
+Structure 3 - -1641.206016094467
+Structure 4 -
+Structure 5 - -1603.696844472356

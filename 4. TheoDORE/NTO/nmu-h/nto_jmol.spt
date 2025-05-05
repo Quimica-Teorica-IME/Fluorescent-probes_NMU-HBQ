@@ -1,0 +1,53 @@
+load NMU-H_ESD.molden.input FILTER "nosort"
+mo titleformat ""
+
+background white
+mo fill
+mo cutoff 0.04
+
+mo color blue red
+mo [ -0.997 84]
+write image pngt "NTO1-1-A_1o_1.00.png"
+mo color orange green
+mo [ -0.976 85 -0.215 86]
+write image pngt "NTO1-1-A_1v_1.00.png"
+
+mo color blue red
+mo [ -0.998 84]
+write image pngt "NTO2-1-A_1o_0.98.png"
+mo color orange green
+mo [ -0.973 86 0.209 85]
+write image pngt "NTO2-1-A_1v_0.98.png"
+
+mo color blue red
+mo [ 0.999 84]
+write image pngt "NTO3-1-A_1o_0.55.png"
+mo color orange green
+mo [ 0.991 87]
+write image pngt "NTO3-1-A_1v_0.55.png"
+mo color blue red
+mo [ 0.997 83]
+write image pngt "NTO3-1-A_2o_0.44.png"
+mo color orange green
+mo [ -0.963 85 0.255 86]
+write image pngt "NTO3-1-A_2v_0.44.png"
+
+mo color blue red
+mo [ -0.932 83 0.358 84]
+write image pngt "NTO4-1-A_1o_0.58.png"
+mo color orange green
+mo [ -0.851 85 0.373 87 0.362 86]
+write image pngt "NTO4-1-A_1v_0.58.png"
+mo color blue red
+mo [ -0.932 84 -0.356 83]
+write image pngt "NTO4-1-A_2o_0.42.png"
+mo color orange green
+mo [ -0.917 87 -0.360 85]
+write image pngt "NTO4-1-A_2v_0.42.png"
+
+mo color blue red
+mo [ 1.000 83]
+write image pngt "NTO5-1-A_1o_0.97.png"
+mo color orange green
+mo [ 0.937 86 0.345 85]
+write image pngt "NTO5-1-A_1v_0.97.png"

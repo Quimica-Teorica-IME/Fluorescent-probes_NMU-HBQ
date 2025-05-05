@@ -1,0 +1,11 @@
+#!/bin/bash
+#PBS -l nodes=2:ppn=4,walltime=720:00:00
+#PBS -N HBQ-H_ES
+#PBS -j oe
+#PBS -M bruno.rodrigues@ime.eb.br
+#PBS -m abe
+module load ORCA/5.0.1-gompi-2021a-static OpenMPI/4.1.1-GCC-8.3.0
+
+cd /home/bruno.rodrigues/HBQ-H_ES/
+
+/apps/software/ORCA/5.0.1-gompi-2021a-static/bin/orca HBQ-H_ES.inp > HBQ-H_ES.out

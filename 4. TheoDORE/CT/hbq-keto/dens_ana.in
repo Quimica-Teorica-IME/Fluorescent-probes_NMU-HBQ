@@ -1,0 +1,14 @@
+rtype='orca'
+rfile='HBQ-KETO_ESD.out'
+read_binary=True
+mo_file='HBQ-KETO_ESD.molden.input'
+at_lists=[[1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 17, 18, 19, 20, 21], [8, 9, 15, 14, 13, 12, 22, 24, 23, 16], [7]]
+Om_formula=2
+eh_pop=1
+comp_ntos=False
+comp_dntos=False
+comp_ntos=False
+comp_rho0n=False
+prop_list=['Om', 'POSi', 'POSf', 'PR', 'CT', 'MC', 'LC', 'MLCT', 'LMCT', 'LLCT', 'RMSeh']
+
+

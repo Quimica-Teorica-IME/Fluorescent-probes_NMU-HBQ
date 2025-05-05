@@ -1,0 +1,41 @@
+load NMU-DCP_ESD.molden.input FILTER "nosort"
+mo titleformat ""
+
+background white
+mo fill
+mo cutoff 0.04
+
+mo color blue red
+mo [ -0.997 120]
+write image pngt "NTO1-1-A_1o_1.00.png"
+mo color orange green
+mo [ -0.997 121]
+write image pngt "NTO1-1-A_1v_1.00.png"
+
+mo color blue red
+mo [ -0.998 120]
+write image pngt "NTO2-1-A_1o_0.98.png"
+mo color orange green
+mo [ -0.993 122]
+write image pngt "NTO2-1-A_1v_0.98.png"
+
+mo color blue red
+mo [ -0.998 119]
+write image pngt "NTO3-1-A_1o_0.99.png"
+mo color orange green
+mo [ -0.997 121]
+write image pngt "NTO3-1-A_1v_0.99.png"
+
+mo color blue red
+mo [ 0.999 120]
+write image pngt "NTO4-1-A_1o_0.97.png"
+mo color orange green
+mo [ 0.996 123]
+write image pngt "NTO4-1-A_1v_0.97.png"
+
+mo color blue red
+mo [ -1.000 119]
+write image pngt "NTO5-1-A_1o_0.96.png"
+mo color orange green
+mo [ -0.994 122]
+write image pngt "NTO5-1-A_1v_0.96.png"
